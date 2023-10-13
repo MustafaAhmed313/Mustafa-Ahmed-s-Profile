@@ -1,0 +1,365 @@
+/* Variables */
+
+:root {
+    --color1: #C4AC8A;
+    --color2: #323347;
+}
+
+/* Body Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+}
+
+
+.parent {
+    margin: 0;
+    background-color: var(--color2);
+}
+
+.container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header Section */
+
+nav {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color1);
+    font-weight: bold;
+    font-size: 30px;
+    align-items: center;
+}
+
+nav svg {
+    fill: var(--color1);
+}
+
+nav .animated-text {
+    display: flex;
+    align-items: center;
+}
+
+nav .animated-text .arrow {
+    margin-left: 10px;
+    border-style: solid;
+    border-color: transparent var(--color1) transparent transparent;;
+    border-width: 10px;
+    width: 0;
+    height: 0; 
+}
+
+.landing {
+    text-align: center;
+    padding: 90px 0;
+}
+
+.landing h1 {
+    font-weight: 800;
+    font-size: 35px;
+    box-shadow: 0 10px 20px black;
+    text-shadow: 0 2px 2px black;
+    margin: 0;
+    background-color: var(--color1);
+}
+
+.landing p {
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+    margin: 55px 0;
+}
+
+/* Info Section */
+
+.info {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.info .about-me h3 , .info .details h3 , .achievements .achievements-content h3 {
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.info .about-me p , .info .details p {
+    font-weight: 400px;
+    font-size: 20px;
+    margin: 0;
+}
+
+.info .profile-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info .profile-photo img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px black;
+    border: 3px dashed var(--color1);
+
+}
+
+.info .details {
+    flex-direction: column;
+}
+
+.info .details h4 {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+
+.info .social-icons {
+    margin-top: 20px;
+}
+
+.info .social-icons a {
+    text-decoration: none;
+    margin-right: 31px;
+}
+
+.info .social-icons svg {
+    width: 40px;
+    height: 45px;
+    fill: var(--color1);
+}
+
+.about-me , .details , .profile-photo {
+    width: 30%;
+}
+
+/* Skills Section */
+
+.skills {
+    margin-top: 50px;
+    color: white;
+}
+
+.head-section {
+    text-align: center;
+    padding: 90px 0;
+}
+
+.head-section h1 {
+    font-weight: 800;
+    font-size: 35px;
+    box-shadow: 0 10px 20px black;
+    text-shadow: 0 2px 2px black;
+    margin: 0;
+    background-color: var(--color1);
+    color: black;
+}
+
+.skills .programming-languages , .skills .frameworks {
+    padding: 30px 0;
+}
+
+.skills .programming-languages span , .skills .frameworks span {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.skills .programming-languages .languages , .skills .frameworks .frames {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.skills .frameworks .frames {
+    justify-content: space-evenly;
+}
+
+.skills .programming-languages p , .skills .frameworks p {
+    font-weight: 600px;
+    font-size: 29px;
+    text-align: center;
+}
+
+.skills .programming-languages div , .skills .frameworks div {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .programming-languages img , .skills .frameworks img {
+    font-weight: 600px;
+    font-size: 29px;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 10px 20px black;
+    margin-bottom: 10%;
+    border-radius: 25%;
+}
+
+/* Achievements Section */
+
+.achievements {
+    color: white;
+    padding-bottom: 240px;
+}
+
+.achievements ,.head-section {
+    margin-top: 65px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.achievements .achievements-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.achievements .achievements-content div {
+    width: 45%;
+}
+
+.achievements .achievements-content svg {
+    width: 25px;
+    height: 25px;
+    fill: var(--color1);
+    margin-right: 10px;
+
+}
+
+/* Footer Section */
+
+footer {
+    background-color: var(--color1);
+    box-shadow: 0 -10px 20px black;
+    color: white;
+    padding: 20px 0;   
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer svg {
+    fill: white;
+    width: 20px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    font-weight: 400px;
+    font-size: 20px;
+}
+
+.contacts {
+    margin-left: 75px;
+    margin-bottom: 30px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer h3 {
+    font-weight: bold;
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+.copy-right {
+    text-align: end;
+    margin-right: 75px;
+    font-weight: 400px;
+    font-size: 20px;
+}
+
+/* Acrions */
+
+.skills img:hover {
+    transform: rotateZ(90deg);
+}
+
+/* Media Queries */
+
+@media (max-width: 1021px) {
+    .container {
+        width: 90%;
+    }
+    
+    .info {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .info .details , .info .about-me , .info .profile-photo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info .details .social-icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .info .details .social-icons a {
+        margin: 0 20px;
+    }
+
+    .info .profile-photo img {
+        margin: 40px 0;
+    }
+
+    .skills .programming-languages div , .skills .frameworks div {
+        width: 33%;
+        margin: 10px 0;
+    }
+
+    .achievements .achievements-content {
+        flex-direction: column;
+    }
+
+    .achievements .achievements-content div { 
+        width: 100%;
+    }
+
+    .contacts {
+        margin-left: 34px;
+        margin-bottom: 13px;
+    }
+}
