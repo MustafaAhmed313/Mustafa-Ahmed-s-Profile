@@ -359,7 +359,7 @@ footer h3 {
     }
 
     .contacts {
-        margin-left: 34px;
+        margin: 0 34px 13px 34px;
         margin-bottom: 13px;
     }
 }
